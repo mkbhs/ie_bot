@@ -8,31 +8,13 @@
 		<div class="container">
     		<div class="blurb">
         		<h1>Indoor Explorer Robot (ie_bot)</h1>
-				    <h5 id="intro">This page shows </h5>
+				    <h3 id="intro">Differential Drive Mobile Robot suitable for Indoor Exploration</h3>
 
+						<h2>Teleoperation Mode</h2>
+            <h5 id="ie_tele_bot_description">A basic visual interface has been implemented to control the motion of the ie_bot. The visual
+							 information is captured by the robot and sent to the teleoperation interface. At the same time the user can sent motion
+							 commands from the interface to the mobile robot. All the communication is done via tcp/ip (wireless) on the local WLAN.</h5>
 
-
-						<h2>Basic Information</h2>
-            <p id="avoid_guardians_description">The goal of the green agent is to reach the other side of the field while avoiding the two red guardians.</p>
-
-						<table id="table_avoid_guardians" class="table">
-						  <thead>
-						    <tr>
-						      <th scope="col">State size</th>
-						      <th scope="col">Action size</th>
-						      <th scope="col">RL-Algorithm</th>
-									<th scope="col">Optimal behaviour(steps)</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <th scope="row">6</th>
-						      <td>4</td>
-						      <td>DQN-PER</td>
-									<td>10k</td>
-						    </tr>
-						  </tbody>
-						</table>
 
 						<div id="img_ie_teleop" class="container">
   						<div class="row">
@@ -43,31 +25,39 @@
 									<figure/>
 						    </div>
 							</div>
+						</div>
 
-							<div id="img_ie_bot" class="container">
-								<div class="row">
-								  <div class="col-sm">
-										<figure>
-											<img src="https://raw.githubusercontent.com/mkbhs/ie_bot/main/media/mkbhs_ie_front_view_1.png" alt="ie_bot front view"  width="300" height="400"/>
-											<figcaption>ie_bot front view</figcaption>
-										<figure/>
-							    </div>
-							    <div class="col-sm">
-										<figure>
-											<img src="https://raw.githubusercontent.com/mkbhs/ie_bot/main/media/mkbhs_ie_side_view_1.png" alt="ie_bot side view"  width="300" height="400" />
-											<figcaption>ie_bot side view</figcaption>
-										</figure>
-							    </div>
-									<div class="col-sm">
-										<figure>
-											<img src="https://raw.githubusercontent.com/mkbhs/ie_bot/main/media/mkbhs_ie_rear_view_1.png" alt="ie_bot rear view"  width="300" height="400" />
-											<figcaption>ie_bot rear view</figcaption>
-										</figure>
-									</div>
+						<h5 id="ie_bot_description">The mobile robot uses as actuators two DC motors connected to a dual-half bridge that is managed
+							by the microcontroller. The computer handles the wireless communication, the visual capturing system. There is a battery for
+						the computer and another different battery for the motors.</h5>
+
+
+						<div id="img_ie_bot" class="container">
+							<div class="row">
+							  <div class="col-sm">
+									<figure>
+										<img src="https://raw.githubusercontent.com/mkbhs/ie_bot/main/media/mkbhs_ie_front_view_1.png" alt="ie_bot front view"  width="300" height="400"/>
+										<figcaption>ie_bot front view</figcaption>
+									<figure/>
+						    </div>
+						    <div class="col-sm">
+									<figure>
+										<img src="https://raw.githubusercontent.com/mkbhs/ie_bot/main/media/mkbhs_ie_side_view_1.png" alt="ie_bot side view"  width="300" height="400" />
+										<figcaption>ie_bot side view</figcaption>
+									</figure>
+						    </div>
+								<div class="col-sm">
+									<figure>
+										<img src="https://raw.githubusercontent.com/mkbhs/ie_bot/main/media/mkbhs_ie_rear_view_1.png" alt="ie_bot rear view"  width="300" height="400" />
+										<figcaption>ie_bot rear view</figcaption>
+									</figure>
 								</div>
 							</div>
-
 						</div>
+
+
+
+
 
 
 
@@ -100,16 +90,14 @@
 	}
 
 
-	#avoid_guardians_description{
+	#ie_tele_bot_description{
 		font-size: 20px;
 		/* margin: 1em 1em !important; */
 	}
 
-	#table_avoid_guardians{
-		color: rgb(220, 220, 220);
-		margin: 1em 1em !important;
-		margin-right: 4em !important;
+	#ie_bot_description{
+		font-size: 20px;
+		/* margin: 1em 1em !important; */
 	}
-
 
 </style>
